@@ -22,7 +22,6 @@ public class FindAndReplace {
 				input+=(char) j ;
 			}
 		}
-		//System.out.println(input);
 		
 		int k=0;
 		while(k<input.length())
@@ -36,26 +35,18 @@ public class FindAndReplace {
 					
 					inter = replace;
 					output += inter;
-if(k==input.length()-1){
+					if(k==input.length()-1){
 						output+=input.charAt(k);
 					}
-					//output+=" ";
 					inter = "";
-				/*if(k<input.length()-1){	k++;
-					inter += input.charAt(k);
-					continue;}*/
 				}
 				else
 				{
 					output += inter;
-					//output+=" ";
 					inter = "";
 					if(k==input.length()-1){
 						output+=input.charAt(k);
 					}
-					/*if(k<input.length()-1){	k++;
-					inter += input.charAt(k);
-					continue;}*/
 				}
 			}
 			inter += input.charAt(k);
@@ -65,23 +56,4 @@ if(k==input.length()-1){
 		byte[] buf = output.getBytes();
 		o.write(buf);			
 	}
-	}
-
-
-	
-//while(j!=-1)
-//{
-//	while(j!=32)
-//	{
-//		j=i.read();
-//		if(j!=32)
-//		{
-//			x+=(char) j ;
-//		}
-//		if(x=="ommale")
-//		{
-//			x="lochan";
-//		}
-//	}
-//	source+=(" "+x);			
-//} 
+}
