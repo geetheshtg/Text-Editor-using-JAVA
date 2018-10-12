@@ -29,7 +29,6 @@ public class FindAndReplace {
 			
 			if((input.charAt(k)==32)||(k==input.length()-1))
 			{
-				System.out.println(inter);
 				if(inter.equals(find))
 				{
 					
